@@ -19,8 +19,10 @@
     "@goat-sdk/plugin-kim": "^0.1.1",
     "@goat-sdk/wallet-evm": "^0.2.0",
     "@goat-sdk/wallet-viem": "^0.2.0",
+    "@types/twilio": "^3.19.2",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "twilio": "^5.4.0",
     "viem": "^2.21.49",
     "zod": "^3.24.1"
   },
