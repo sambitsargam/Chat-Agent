@@ -1,0 +1,31 @@
+{
+  "name": "ai-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ai-sdk/openai": "^1.0.4",
+    "@goat-sdk/adapter-vercel-ai": "^0.2.0",
+    "@goat-sdk/core": "^0.4.0",
+    "@goat-sdk/plugin-coingecko": "^0.2.0",
+    "@goat-sdk/plugin-erc20": "^0.2.2",
+    "@goat-sdk/plugin-erc721": "^0.1.11",
+    "@goat-sdk/plugin-kim": "^0.1.1",
+    "@goat-sdk/wallet-evm": "^0.2.0",
+    "@goat-sdk/wallet-viem": "^0.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "viem": "^2.21.49",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2"
+  }
+}
