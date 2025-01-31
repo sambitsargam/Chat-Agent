@@ -1,11 +1,11 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-
-
-
+import { uniswap } from "@goat-sdk/plugin-uniswap";
+import { modespray } from "@goat-sdk/plugin-modespray";
+import { pumpfun } from "@goat-sdk/plugin-pumpfun";
 import { openai } from "@ai-sdk/openai";
 import { generateText } from "ai";
-
+import { opensea } from "@goat-sdk/plugin-opensea";
 import { http } from "viem";
 import { createWalletClient } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
@@ -41,7 +41,10 @@ const twilioClient = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_A
             sendETH(),
             erc20({ tokens: [USDC, MODE] }),
             kim(),
+            modespray(),
             coingecko({ apiKey: "CG-omKTqVxpPKToZaXWYBb8bCJJ" }),
+            opensea(process.env.OPENSEA_API_KEY as string),
+           // pumpfun(),
         ],
     });
 
