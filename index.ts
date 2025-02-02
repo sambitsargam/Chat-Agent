@@ -17,6 +17,7 @@ import { kim } from "@goat-sdk/plugin-kim";
 import { coingecko } from "@goat-sdk/plugin-coingecko";
 import { sendETH } from "@goat-sdk/wallet-evm";
 import { viem } from "@goat-sdk/wallet-viem";
+import { modeGovernance } from "@goat-sdk/plugin-mode-governance";
 
 
 require("dotenv").config();
@@ -45,6 +46,7 @@ const twilioClient = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_A
             coingecko({ apiKey: "CG-omKTqVxpPKToZaXWYBb8bCJJ" }),
             opensea(process.env.OPENSEA_API_KEY as string),
            // pumpfun(),
+           modeGovernance(),
         ],
     });
 
